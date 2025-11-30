@@ -1,0 +1,252 @@
+/* Variables globales */
+:root {
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --light: #f8fafc;
+  --radius: 12px;
+  --transition: 0.3s ease;
+  --max-width: 1200px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--dark);
+  transition: var(--transition);
+}
+
+nav button:hover {
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Secciones */
+section,
+div[id] {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem 2rem;
+}
+
+.section {
+  padding-top: 6rem;   /* aire superior */
+  padding-bottom: 6rem; /* aire inferior */
+  min-height: 100vh;   /* ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Hero / Landing */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 700px;
+}
+
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Botón principal */
+button.primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  margin-top: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+button.primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+/* Newsletter */
+.newsletter-box {
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.newsletter-box input {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray);
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark nav {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+body.dark nav button {
+  color: #e2e8f0;
+}
+
+body.dark .project-card {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark form,
+body.dark .newsletter-box {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark input,
+body.dark textarea {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+body.dark footer {
+  color: #94a3b8;
+}
+
+body.dark h1, h2, h3 {
+    color: white;
+}
