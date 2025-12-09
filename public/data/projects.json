@@ -4,41 +4,41 @@
     "title": "Plataforma de Reservas para Restaurantes",
     "desc": "Plataforma de reservas para restaurantes con gestión de mesas, panel para administradores y sistema de notificaciones en tiempo real.",
     "languages": "React, Node.js, Express, MongoDB, Socket.io",
-    "img": "/public/imgs/restaurantPage.png"
+    "img": "/imgs/restaurantPage.png"
   },
   {
     "id": "2",
     "title": "Aplicación E-commerce Completa",
     "desc": "Aplicación e-commerce completa con carrito persistente, pasarela de pago y panel de control para vendedores.",
     "languages": "Next.js, TypeScript, Prisma, PostgreSQL, Stripe API",
-    "img": "/public/imgs/ecommerce.png"
+    "img": "/imgs/ecommerce.png"
   },
   {
     "id": "3",
     "title": "Sistema de Gestión de Tareas Colaborativo",
     "desc": "Sistema de gestión de tareas colaborativo con tableros estilo Kanban, autenticación y roles de usuario.",
     "languages": "Vue, Pinia, Laravel, MySQL, JWT",
-    "img": "/public/imgs/taskManager.png"
+    "img": "/imgs/taskManager.png"
   },
   {
     "id": "4",
     "title": "Red Social Minimalista",
-    "desc": "Red social minimalista con publicaciones, comentarios, seguidores y feed personalizado.",
+    "desc": "Red social minimalista conaciones, comentarios, seguidores y feed personalizado.",
     "languages": "Angular, NestJS, TypeORM, Redis, PostgreSQL",
-    "img": "/public/imgs/socialmedia.png"
+    "img": "/imgs/socialmedia.png"
   },
   {
     "id": "5",
     "title": "Dashboard de Analíticas Empresariales",
     "desc": "Dashboard de analíticas para empresas con gráficos dinámicos, exportación de reportes y API de métricas.",
     "languages": "SvelteKit, Go (Golang), Fiber, InfluxDB, D3.js",
-    "img": "/public/imgs/analytic.png"
+    "img": "/imgs/analytic.png"
   },
   {
     "id": "6",
     "title": "App de Gestión de Inventario con QR",
     "desc": "App de gestión de inventario con escaneo de códigos QR, control de stock y sincronización entre dispositivos.",
     "languages": "React Native, Python (FastAPI), SQLite, Supabase",
-    "img": "/public/imgs/inventory.png"
+    "img": "/imgs/inventory.png"
   }
 ]
