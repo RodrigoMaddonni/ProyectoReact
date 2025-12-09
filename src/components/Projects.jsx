@@ -1,11 +1,24 @@
-export default function Projects() {
+import Project from './pages/Project.jsx'
+
+export default function Projects({projectsJson}) {
     return (
         <>
-            <h2 className="section-title">Proyectos</h2>
-            <div className="projects-grid">
-                <div className="project-card">Proyecto 1</div>
-                <div className="project-card">Proyecto 2</div>
-                <div className="project-card">Proyecto 3</div>
+            <div>
+                <h2 className="section-title">Proyectos</h2>
+                <div className="projects-grid">
+                    {
+                        projectsJson.map(pr =>
+                            <Project
+                                key={pr.id}
+                                id={pr.id}
+                                title={pr.title}
+                                desc={pr.desc}
+                                lang={pr.languages}
+                                img={pr.img}
+                            />
+                        )
+                    }
+                </div>
             </div>
         </>
     )

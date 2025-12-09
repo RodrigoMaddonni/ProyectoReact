@@ -2,10 +2,10 @@ export default function Home() {
     return (
         <>
             <div className="hero-content">
-                <h1>Janding Page</h1>
+                <h1>Rodrigo Fernández</h1>
+                <h2>Desarrollador Web</h2>
                 <p>
-                    Sóc un desenvolupador web membre de DigitalEvolution S.A.  
-                    Aquí podràs trobar els meus projectes, informació de contacte i la possibilitat de subscriure’t al nostre newsletter.
+                    Soy desarrollador web en DigitalEvolution S.A. Aquí puedes encontrar mis proyectos, información de contacto y la opción de suscribirte a nuestro boletín informativo.
                 </p>
             </div>
         </>
